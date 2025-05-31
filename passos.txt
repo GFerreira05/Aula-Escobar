@@ -1,0 +1,46 @@
+/*
+ API
+    - CRUD de pessoa
+
+ NodeJS
+    - express (para receber requisicoes)
+    - mongoose (para conexao com o mongo)
+
+1) Transformar em projeto Node (a pasta)
+    > npm init
+
+2) Instalação das bibliotecas
+    > npm install express mongoose
+
+3) Na raiz do projeto criar um arquivo chamado .gitignore
+    Adicionar dentro dele o texto
+        node_modules/
+
+4) Criação do arquivo, arquivo principal de nossa aplicação 
+    index.js
+
+5) Iremos conectar no banco 
+    - Criar um objeto que fará a conexão
+    - E servir para demais objetos 
+    - models/database.js
+
+6) Definição de collections (TABELAS)    
+    - usuario
+    - categoria
+    - produto
+    - venda
+
+7) Estrutura da collection usuario
+    models/usuario.js
+
+8) Buscar informacoes no banco
+    endpoint: GET
+    const Usuario = require("./models/usuario")
+    var usuarios = Usuario.find()
+    console.log(usuarios)
+
+
+
+Executar o servidor -> RODAR
+ > node index.js
+*/
